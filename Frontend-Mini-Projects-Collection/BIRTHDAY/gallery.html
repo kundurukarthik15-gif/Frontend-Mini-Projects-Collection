@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Birthday Gift</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">🎂 Birthday</a>
+                </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="journey.html" class="nav-link">Journey</a></li>
+                <li><a href="memories.html" class="nav-link">Memories</a></li>
+                <li><a href="suprise.html" class="nav-link">Surprise</a></li>
+                
+                <li><a href="message.html" class="nav-link">Message</a></li>
+            </ul>
+            </div>
+            
+            
+        </div>
+    </nav>
+
+    <!-- Audio -->
+    <audio id="background-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Gallery Section -->
+    <section class="page-hero gallery-hero">
+        <h1>Gallery of Smiles</h1>
+        <p>Beautiful Moments Frozen in Time</p>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-intro">
+            <p>Every photo tells a story. Every smile captures a moment of joy. Browse through our collection of beautiful memories.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="gallery 1.jpg" alt="Gallery 1">
+               
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="gallery 2.jpg" alt="Gallery 2">
+                
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="gallery 3.jpg" alt="Gallery 3">
+                
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="gallery 4.jpg" alt="Gallery 4">
+               
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="gallery 5.jpg" alt="Gallery 5">
+                
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="gallery 6.jpg" alt="Gallery 6">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="nav-buttons">
+        <button class="btn-secondary" onclick="goToPage('journey.html')">← Back</button>
+        <button class="btn-secondary" onclick="goToPage('suprise.html')">Next: suprise →</button>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="/placeholder.svg" alt="">
+            <p id="modal-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

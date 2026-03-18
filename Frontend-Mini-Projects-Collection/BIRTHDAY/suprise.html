@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise - Birthday Gift</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">🎂 Birthday</a>
+                </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="journey.html" class="nav-link">Journey</a></li>
+                <li><a href="memories.html" class="nav-link">Memories</a></li>
+                <li><a href="surprise.html" class="nav-link">Surprise</a></li>
+                <li><a href="message.html" class="nav-link">Message</a></li>
+            </ul>
+          
+    </nav>
+
+   
+    <!-- Surprise Section -->
+    <section class="surprise">
+        <div class="surprise-container">
+            <h2>🎉 Special Surprise 🎉</h2>
+            <p class="surprise-text">You've reached the magic moment! Click the button below to reveal something special just for you...</p>
+            <button class="btn-gift" onclick="openSurprise()">Click to Open Your Surprise 🎁</button>
+            <div class="cake-container hidden" id="cake">
+                <div class="cake">
+                    <div class="candle"></div>
+                    <div class="cake-layer layer1"></div>
+                    <div class="cake-layer layer2"></div>
+                    <div class="cake-layer layer3"></div>
+                </div>
+                <p class="wish-text">Make a Wish! 💫</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="nav-buttons">
+        <button class="btn-secondary" onclick="goToPage('gallery.html')">← Back</button>
+        <button class="btn-secondary" onclick="goToPage('message.html')">Next: Message→</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 

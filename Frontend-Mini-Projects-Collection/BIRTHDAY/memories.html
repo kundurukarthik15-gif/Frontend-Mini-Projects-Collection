@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories - Birthday Gift</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">🎂 Birthday</a>
+                </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="journey.html" class="nav-link">Journey</a></li>
+                <li><a href="memories.html" class="nav-link">Memories</a></li>
+                <li><a href="suprise.html" class="nav-link">Surprise</a></li>
+            
+                
+                <li><a href="message.html" class="nav-link">Message</a></li>
+            </ul>
+            </div>
+           
+           
+        </div>
+    </nav>
+
+    <!-- Audio -->
+    <audio id="background-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Memories Section -->
+    <section class="page-hero memories-hero">
+        <h1>Cherished Memories</h1>
+        <p>Our Most Beautiful Moments</p>
+    </section>
+
+    <section class="memories">
+        <div class="memories-content">
+            <p class="memories-intro">These are the moments that matter most. The times we laughed until our stomachs hurt, the adventures we shared, and the memories we'll treasure forever.</p>
+            <div class="memories-grid">
+                <div class="memory-card" onclick="openModal(this)">
+                    <img src="memo 1.jpg" alt="Memory 1">
+                </div>
+                <div class="memory-card" onclick="openModal(this)">
+                    <img src="memo 2.jpg" alt="Memory 2">
+                    
+                </div>
+                <div class="memory-card" onclick="openModal(this)">
+                    <img src="memo 3.jpg" alt="Memory 3">
+                    
+                </div>
+                <div class="memory-card" onclick="openModal(this)">
+                    <img src="memo 4.jpg" alt="Memory 4">
+                   
+                </div>
+                <div class="memory-card" onclick="openModal(this)">
+                    <img src="memo 5.jpg" alt="Memory 5">
+                   
+                </div>
+                 <div class="memory-card" onclick="openModal(this)">
+                    <img src="momo 6.jpg" alt="Memory 5">
+                   
+                </div>
+                 <div class="memory-card" onclick="openModal(this)">
+                    <img src="memo 7.jpg" alt="Memory 5">
+                   
+                </div>
+                <div class="memory-card" onclick="openModal(this)">
+                    <img src="memo 8.jpg" alt="Memory 6">
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nav-buttons">
+        <button class="btn-secondary" onclick="goToPage('about.html')">← Back</button>
+        <button class="btn-secondary" onclick="goToPage('journey.html')">Next: Journey →</button>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="/placeholder.svg" alt="">
+            <p id="modal-caption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

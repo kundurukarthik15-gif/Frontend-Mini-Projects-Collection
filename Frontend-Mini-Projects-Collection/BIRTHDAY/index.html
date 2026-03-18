@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - A Digital Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">🎂 Birthday</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="journey.html" class="nav-link">Journey</a></li>
+                <li><a href="memories.html" class="nav-link">Memories</a></li>
+                <li><a href="suprise.html" class="nav-link">Surprise</a></li>
+               
+                <li><a href="message.html" class="nav-link">Message</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+
+    <!-- Welcome Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="balloons"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+    Happy Birthday <br>
+    <span style="color: #ff4fa3;">Sabeera</span>
+</h1>
+
+            <p class="hero-subtitle">A digital surprise made with love</p>
+            <p class="hero-subtitle-small">Click on any card below to explore</p>
+        </div>
+        <div class="confetti"></div>
+    </section>
+
+    <!-- Interactive Cards Section -->
+    <section class="cards-section">
+        <div class="cards-container">
+            <div class="card" onclick="goToPage('about.html')">
+                <div class="card-icon">👤</div>
+                <h3>About You</h3>
+                <p>Discover why you're so special</p>
+            </div>
+            <div class="card" onclick="goToPage('memories.html')">
+                <div class="card-icon">🖼️</div>
+                <h3>Memories</h3>
+                <p>Our cherished moments together</p>
+            </div>
+            <div class="card" onclick="goToPage('journey.html')">
+                <div class="card-icon">🛤️</div>
+                <h3>Our Journey</h3>
+                <p>How our friendship began</p>
+            </div>
+            <div class="card" onclick="goToPage('gallery.html')">
+                <div class="card-icon">📸</div>
+                <h3>Gallery</h3>
+                <p>Beautiful moments captured</p>
+            </div>
+            <div class="card" onclick="goToPage('surprise.html')">
+                <div class="card-icon">🎁</div>
+                <h3>Special Surprise</h3>
+                <p>Click to reveal the magic</p>
+            </div>
+            <div class="card" onclick="goToPage('message.html')">
+                <div class="card-icon">💌</div>
+                <h3>Final Message</h3>
+                <p>With all my love</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
