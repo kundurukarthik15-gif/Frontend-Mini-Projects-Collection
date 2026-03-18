@@ -1,18 +1,3 @@
-# 🚀 Frontend Mini Projects Collection
-
-## 📌 Repository Title
-
-Frontend-Mini-Projects-Collection
-
----
-
-## 📌 Description
-
-A collection of beginner to intermediate frontend projects built using HTML, CSS, and JavaScript. Includes UI components and mini web applications for practice and learning.
-
----
-
-## 📌 README.md
 
 # 🚀 Frontend Mini Projects Collection
 
